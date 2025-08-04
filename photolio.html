@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3.CSS Stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Karma", sans-serif;
+    }
+
+    .w3-bar-block .w3-bar-item {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar (hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:300px;" id="mySidebar">
+  <a href="#" class="w3-bar-item w3-button w3-text-grey">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Food</a>
+  <a href="#" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Overlay for small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main Content: Shifted right when sidebar is visible -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <div class="w3-container">
+    <h1 class="w3-jumbo"><b>My Food</b></h1>
+    <h1 class="w3-xxlarge w3-text-red"><b>Menu.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo Grid -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="Sandwich" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>The Perfect Sandwich, A Real NYC Classic</b></p>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/steak.jpg" alt="Steak" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Let Me Tell You About This Steak</b></p>
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="Cherries" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Cherries, interrupted</b></p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Images -->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/wine.jpg" alt="Wine" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Once Again, Robust Wine and Vegetable Pasta</b></p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="Popsicle" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>All I Need Is a Popsicle</b></p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="Salmon" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Salmon For Your Skin</b></p>
+        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3.css</a></p>
+  </footer>
+
+</div>
+
+<script>
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
